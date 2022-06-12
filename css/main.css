@@ -4,6 +4,12 @@
     --dark: #212121;
 }
 
+html{
+    background: black;
+    height: 100%;
+    overflow: hidden;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +17,12 @@
     font-family: 'Fira Sans', 'sans-serif';
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
 .container{
     max-width: 1280px;
     margin: 0 auto;
