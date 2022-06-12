@@ -23,6 +23,11 @@ body{
     height: 100%;
 
 }
+
+canvas{
+    opacity: 30%;
+}
+
 .container{
     max-width: 1280px;
     margin: 0 auto;
