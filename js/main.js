@@ -41,8 +41,10 @@ const draw = () => {
 setInterval(draw, 30);
 
 
-const hamburger = document.querySelector('.hamburger');
 
-hamburger.addEventListener('click', function  () {
-    this.classList.toggle('is.active');
-});
+        var typed = new Typed(".auto-typed", {
+            strings: ["Hacker's Choice", "Information Technology Company", "Hacker's Community", "Event Organiser"],
+            typeSpeed: 90,
+            backSpeed: 60,
+            loop: true
+        })
