@@ -43,7 +43,7 @@ body {
 }
 
 .container {
-    color: #fff;
+    color: rgb(255, 255, 255);
     display: flex;
     text-align: center;
     align-items: center;
@@ -51,20 +51,26 @@ body {
     position: absolute;
     top: 50%;
     bottom: 50%;
+    /* animation-name: chat_an1; */
     width: 100%;
+
 }
 
 .container h1 {
     font-size: 60px;
+
     font-weight: 600;
 }
 
 span {
+
     color: #fff700;
 }
 
 canvas {
     opacity: 25%;
+    width: 100%;
+
 
 }
 
@@ -138,8 +144,10 @@ header {
     background-color: black;
     box-shadow: rgb(0, 255, 6) 5px 5px 5px 0px;
 
-    padding: 9px 25px;
-    font-family: cursive;
+    padding: 12px 30px;
+
+    text-decoration: double;
+
 }
 
 .login_btn::after {
@@ -241,13 +249,30 @@ header {
 
 }
 
-#container {
+.container1 {
     position: relative;
 }
 
-#container canvas,
-#overlay {
+/*! .container1 canvas, */
+#Matrix {
     position: absolute;
+
+}
+
+.overlay {
+    position: absolute;
+    /* left: 1%;
+    top:50%; */
+
+}
+
+
+.overlay1 {
+    position: absolute;
+    left: 50%;
+    /* top:100%; */
+    top: 450px;
+    height: 100%;
 
 }
 
@@ -258,3 +283,88 @@ canvas {
 /* ====================================== */
 /* -------SOCIAL MEDIA SIDE BAR---------- */
 /* ================END================== */
+.wrapper {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.link_wrapper {
+    position: relative;
+
+}
+
+.btn_link {
+    display: block;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    background: #333;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 3px solid #333;
+    box-shadow: rgb(32, 255, 32) 2px 2px 30px 2px;
+    transition: all .35s;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border: 3px solid transparent;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 0;
+    top: 0;
+    z-index: -1;
+
+    transition: all .35s;
+
+}
+
+.icon svg {
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    transform: rotate(-45deg);
+    fill: #2ecc71;
+    transition: all .35s;
+}
+
+.btn_link:hover {
+    width: 200px;
+    border: 3px solid #2ecc71;
+    background: transparent;
+    color: #2ecc71;
+    box-shadow: rgb(237, 232, 237) 2px 2px 30px 2px;
+}
+
+.btn_link:hover+.icon {
+    border: 3px solid #2ecc71;
+    right: -25%;
+}
+
+@keyframes glowing {
+    0% {
+      /* background-color: #b9faa5; */
+      box-shadow: 0 0 15px #ffffff;
+    }
+    50% {
+      /* background-color: #bbe9ad; */
+      box-shadow: 0 0 40px #66e73e;
+    }
+    100% {
+      /* background-color: #a3f69a; */
+      box-shadow: 0 0 15px #00ff3c;
+    }
+  }
+  .btn_link {
+    animation: glowing 1500ms infinite;
+    border-radius: 5px;
+  }
