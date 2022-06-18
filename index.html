@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Linterex | A Hacking Community</title>
-	<link rel="stylesheet" type="text/css" href="/css/main.css">
-</head>
-<body>	
-	
-<div class="container">
-        <h1>Introducing <span class="auto-typed"></span></h1>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+	<div class="container">
+		<h1>Introducing <span class="auto-typed"></span></h1>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 	<header>
-		<a class="logo" onclick="about">Linterex</a>
+		<a class="logo" onclick="about"><b>Linterex</b></a>
 		<!--<img class="logo" src="LOGO PATH">-->
 		<nav>
 			<ul class="nav_links">
@@ -23,11 +32,48 @@
 				<li><a href="#">MATERIALS</a></li>
 			</ul>
 		</nav>
-		<a class="cta" href="/login page/login.html"><button>Login</button></a>
+		<button onclick="login()" class="login_btn"><b>Login</b></button>
 	</header>
-	
-	<canvas id="Matrix"></canvas>
-	<script src="/js/main.js"></script>
+
+
+	<div id="container">
+		<canvas id="Matrix"></canvas>
+		<footer>
+			<div id="overlay">
+
+				<ul class="scl_media">
+
+					<li class="l1" style="--clr:#1877f2;">
+						<a class="a1" href=""><i class="fa-brands fa-facebook-f"></i></a>
+					</li>
+
+					<li class="l1" style="--clr:#f218bf;">
+						<a class="a1" href=""><i class="fa-brands fa-instagram"></i></a>
+					</li>
+
+					<li class="l1" style="--clr:#35e91a;">
+						<a class="a1" href=""><i class="fa-brands fa-whatsapp"></i></a>
+					</li>
+
+					<li class="l1" style="--clr:#1877f2;">
+						<a class="a1" href=""><i class="fa-brands fa-twitter"></i></a>
+					</li>
+
+					<li class="l1" style="--clr:#f21818;">
+						<a class="a1" href=""><i class="fa-brands fa-youtube"></i></a>
+					</li>
+				</ul>
+			</div>
+	</div>
+</body>
+
+<script src="js/main.js"></script>
+<script>
+	function login() {
+		window.location.href = "login.html";
+	}
+</script>
 
 </body>
+
 </html>
