@@ -7,7 +7,7 @@
 
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-
+	<link rel="stylesheet" href="css/chat.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
 		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+	<!-- !hehe -->
 	<div class="container">
 		<h1>Introducing <span class="auto-typed"></span></h1>
 	</div>
@@ -33,44 +33,73 @@
 			</ul>
 		</nav>
 		<button onclick="login()" class="login_btn"><b>Login</b></button>
+		<button onclick="join()" class="login_btn"><b>Join Now</b></button>
 	</header>
 
 
-	<div id="container">
+	<div class="container1">
 		<canvas id="Matrix"></canvas>
-		<footer>
-			<div id="overlay">
 
-				<ul class="scl_media">
+		<!--SOCIAL MEDIA -->
+		<div class="overlay">
 
-					<li class="l1" style="--clr:#1877f2;">
-						<a class="a1" href=""><i class="fa-brands fa-facebook-f"></i></a>
-					</li>
+			<ul class="scl_media">
 
-					<li class="l1" style="--clr:#f218bf;">
-						<a class="a1" href=""><i class="fa-brands fa-instagram"></i></a>
-					</li>
+				<li class="l1" style="--clr:#1877f2;">
+					<a class="a1" href=""><i class="fa-brands fa-facebook-f"></i></a>
+				</li>
 
-					<li class="l1" style="--clr:#35e91a;">
-						<a class="a1" href=""><i class="fa-brands fa-whatsapp"></i></a>
-					</li>
+				<li class="l1" style="--clr:#f218bf;">
+					<a class="a1" href=""><i class="fa-brands fa-instagram"></i></a>
+				</li>
 
-					<li class="l1" style="--clr:#1877f2;">
-						<a class="a1" href=""><i class="fa-brands fa-twitter"></i></a>
-					</li>
+				<li class="l1" style="--clr:#35e91a;">
+					<a class="a1" href=""><i class="fa-brands fa-whatsapp"></i></a>
+				</li>
 
-					<li class="l1" style="--clr:#f21818;">
-						<a class="a1" href=""><i class="fa-brands fa-youtube"></i></a>
-					</li>
-				</ul>
+				<li class="l1" style="--clr:#1877f2;">
+					<a class="a1" href=""><i class="fa-brands fa-twitter"></i></a>
+				</li>
+
+				<li class="l1" style="--clr:#f21818;">
+					<a class="a1" href=""><i class="fa-brands fa-youtube"></i></a>
+				</li>
+			</ul>
+
+
+
+		</div>
+		<!-- BUTTON START HACKING  -->
+		<div class="overlay1">
+
+			<div class="wrapper">
+				<div class="link_wrapper">
+					<a class="btn_link" href="#">Start Hacking</a>
+					<div class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+							<path
+								d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z" />
+						</svg>
+					</div>
+				</div>
+
 			</div>
+
+		</div>
+
 	</div>
+
+
 </body>
 
 <script src="js/main.js"></script>
 <script>
 	function login() {
-		window.location.href = "/login page/login.html";
+		window.location.href = "login.html";
+	}
+
+	function join() {
+		alert("joined");
 	}
 </script>
 
