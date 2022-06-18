@@ -43,7 +43,7 @@ setInterval(draw, 30);
 
 
         var typed = new Typed(".auto-typed", {
-            strings: ["Hacker's Choice", "Information Technology Company", "Hacker's Community", "Event Organiser"],
+            strings: ["Hacker's Choice", "Information Technology Company", "Hacker's Community", "Event organizer"],
             typeSpeed: 90,
             backSpeed: 60,
             loop: true
