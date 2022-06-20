@@ -6,7 +6,7 @@
     }
 
     to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #fdfdfd, 0 0 40px #fdfdfd, 0 0 60px #fdfdfd;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fdfdfd, 0 0 30px #fdfdfd, 0 0 40px #fdfdfd;
     }
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 .container h1 {
-    font-size: 60px;
+    font-size: 50px;
 
     font-weight: 600;
 }
@@ -70,13 +70,10 @@ span {
 canvas {
     opacity: 25%;
     width: 100%;
-
-
+    left: 5.4%;
 }
 
 
-li,
-a,
 
 /* --------------button------------ */
 button {
@@ -106,28 +103,33 @@ header {
     width: 170px;
     height: 35px;
     margin-right: auto;
+    left: 15%;
+    position: absolute;
 
     -webkit-animation: logo 1s ease-in-out infinite alternate;
     -moz-animation: logo 1s ease-in-out infinite alternate;
     animation: logo 1s ease-in-out infinite alternate;
 }
 
-*/ .nav_links {
+/* .nav_links {
     list-style: none;
+
 }
 
 .nav_links li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 15px;
+
 }
 
 .nav_links li a {
     transition: all 0.3s ease 0s;
+    font-size: 15px;
 }
 
 .nav_links li a:hover {
     color: #0088a9;
-}
+} */
 
 
 /* ====================================== */
@@ -263,6 +265,7 @@ header {
     position: absolute;
     /* left: 1%;
     top:50%; */
+    left: 93%;
 
 }
 
@@ -275,6 +278,11 @@ header {
     height: 100%;
 
 }
+
+.overlay3 {
+    position: static
+}
+
 
 canvas {
     border: 1px solid rgb(255, 251, 251);
@@ -352,19 +360,167 @@ canvas {
 
 @keyframes glowing {
     0% {
-      /* background-color: #b9faa5; */
-      box-shadow: 0 0 15px #ffffff;
+        /* background-color: #b9faa5; */
+        box-shadow: 0 0 15px #ffffff;
     }
+
     50% {
-      /* background-color: #bbe9ad; */
-      box-shadow: 0 0 40px #66e73e;
+        /* background-color: #bbe9ad; */
+        box-shadow: 0 0 40px #66e73e;
     }
+
     100% {
-      /* background-color: #a3f69a; */
-      box-shadow: 0 0 15px #00ff3c;
+        /* background-color: #a3f69a; */
+        box-shadow: 0 0 15px #00ff3c;
     }
-  }
-  .btn_link {
+}
+
+.btn_link {
     animation: glowing 1500ms infinite;
     border-radius: 5px;
-  }
+}
+
+
+
+
+
+
+
+
+
+#span1 {
+
+    color: #ffffff;
+}
+
+
+
+.navigation {
+    position: absolute;
+    left: 0;
+    top: 0%;
+    height: 100%;
+    width: 70px;
+    background-color: rgb(0, 1, 0);
+    box-shadow: 10px 0 0 rgb(0, 255, 0);
+    border-left: 10px solid rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: width 0.5s;
+    --size1: 4%;
+}
+
+.navigation:hover {
+    width: 300px;
+
+    --size2: 40px;
+    --size3: 15%;
+}
+
+.navigation .ul1 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+
+}
+
+.navigation .ul1 li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+
+}
+
+.navigation .ul1 li.active {
+    background-color: rgb(0, 255, 0);
+
+}
+
+
+
+
+.navigation .ul1 li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
+.navigation .ul1 li.active a::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    right: 0px;
+    background: rgb(0, 0, 0);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 0 rgb(0, 255, 0);
+}
+
+.navigation .ul1 li.active a::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0px;
+    background: rgb(0, 0, 0);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 rgb(0, 255, 0);
+}
+
+
+.navigation .ul1 li a .icon1 {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+
+
+}
+
+.navigation .ul1 li a .icon1 .ion {
+    position: relative;
+    font-size: 1.5em;
+    z-index: 1;
+
+}
+
+.navigation .ul1 li a .title {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+
+}
+
+
+.logo_menu {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 255, 6);
+    font-size: var(--size2);
+    cursor: pointer;
+    width: 170px;
+    height: 35px;
+    margin-right: auto;
+    right: 20%;
+    top: 2%;
+    position: absolute;
+
+    -webkit-animation: logo 1s ease-in-out infinite alternate;
+    -moz-animation: logo 1s ease-in-out infinite alternate;
+    animation: logo 1s ease-in-out infinite alternate;
+}
