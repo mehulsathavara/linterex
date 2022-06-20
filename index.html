@@ -24,17 +24,75 @@
 
 	<header>
 		<a class="logo" onclick="about"><b>Linterex</b></a>
+
 		<!--<img class="logo" src="LOGO PATH">-->
-		<nav>
+		<!-- <nav>
 			<ul class="nav_links">
 				<li><a href="#">HOME</a></li>
-				<li><a href="#">COURSES</a></li>
-				<li><a href="#">MATERIALS</a></li>
+				<li><a href="#">CHALLANGES <BR>AND COMPETETION</a></li>
+				<li><a href="#">RESOURCES</a></li>
+				<li><a href="#">MARKETPLACE</a></li>
+				<li><a href="#">COMPANY</a></li>
 			</ul>
-		</nav>
+		</nav> -->
+
+
+
+
+
 		<button onclick="login()" class="login_btn"><b>Login</b></button>
 		<button onclick="join()" class="login_btn"><b>Join Now</b></button>
 	</header>
+
+	<div class="overlay3">
+		<div class="navigation">
+			<a class="logo_menu" onclick="about"><b>Linterex</b></a>
+			<ul class="ul1">
+				<li class="list active">
+					<a href="#">
+						<span id=span1 class="icon1">
+							<ion-icon class="ion" name="home-outline"></ion-icon>
+						</span>
+						<span id=span1 class="title">Home</span>
+					</a>
+				</li>
+
+				<li class="list">
+					<a href="#">
+						<span id=span1 class="icon1">
+							<ion-icon name="warning-outline"></ion-icon>
+						</span>
+						<span id=span1 class="title">Challanges</span>
+					</a>
+				</li>
+				<li class="list">
+					<a href="#">
+						<span id=span1 class="icon1">
+							<ion-icon name="bookmarks-outline"></ion-icon>
+						</span>
+						<span id=span1 class="title">Resources</span>
+					</a>
+				</li>
+				<li class="list">
+					<a href="#">
+						<span id=span1 class="icon1">
+							<ion-icon name="storefront-outline"></ion-icon>
+						</span>
+						<span id=span1 class="title">Marketplace</span>
+					</a>
+				</li>
+				<li class="list">
+					<a href="#">
+						<span id=span1 class="icon1">
+							<ion-icon name="business-outline"></ion-icon>
+						</span>
+						<span id=span1 class="title">Company</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
 
 
 	<div class="container1">
@@ -70,6 +128,8 @@
 
 		</div>
 		<!-- BUTTON START HACKING  -->
+
+
 		<div class="overlay1">
 
 			<div class="wrapper">
@@ -102,7 +162,23 @@
 		alert("joined");
 	}
 </script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+
+
+<script>
+	//add active class in selected tab 
+	const list = document.querySelectorAll('.list');
+
+	function activeLink() {
+		list.forEach((item) =>
+			item.classList.remove('active'));
+		this.classList.add('active');
+	}
+	list.forEach((item) =>
+		item.addEventListener('click', activeLink));
+</script>
 </body>
 
 </html>
